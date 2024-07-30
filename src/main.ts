@@ -85,7 +85,7 @@ async function main(argv, env): Promise<void> {
                     name = error.name
                 }
             } else {
-                message = errorEvent.message || `App-proxy connection issue. Restart pipeline, and if problem persists, contact support.`
+                message = errorEvent.message || `Runtime connection issue. Restart pipeline, and if problem persists, contact support.`
             }
             reject(new EventSourceError(message, name))
         })
